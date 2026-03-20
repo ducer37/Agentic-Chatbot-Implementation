@@ -1,0 +1,11 @@
+google-genai
+python-dotenv
+mcp[cli]
+pydantic
+python-docx
+pandas
+openpyxl
+groq
+google-api-python-client 
+google-auth-httplib2 
+google-auth-oauthlib

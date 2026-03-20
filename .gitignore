@@ -1,0 +1,20 @@
+# --- Python ---
+__pycache__/
+.venv/
+*.py[cod]
+*$py.class
+
+# --- Google Cloud & Sensitive Data (CỰC KỲ QUAN TRỌNG) ---
+# Không bao giờ được đẩy các file này lên Git vì nó chứa quyền truy cập Drive của bạn
+credentials.json
+token.json
+.env
+
+# --- Local Workspace ---
+# Đây là nơi chứa các file test hoặc file agent tự tạo ra
+# Bạn không nên track chúng để tránh làm rác repo
+workspace/
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
