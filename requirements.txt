@@ -11,3 +11,5 @@ google-auth-httplib2
 google-auth-oauthlib
 langgraph 
 langchain-groq
+fastapi
+uvicorn[standard]

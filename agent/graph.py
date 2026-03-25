@@ -4,7 +4,7 @@ from agent.nodes import call_model, tool_node
 from agent.edges import should_continue
 from functools import partial
 
-def create_graph(mcp_helper, tools):
+def create_graph(mcp_helper, tools, checkpointer):
     workflow = StateGraph(AgentState)
 
     # Sử dụng partial để truyền thêm tham số (mcp_helper, tools) vào Nodes
@@ -15,4 +15,4 @@ def create_graph(mcp_helper, tools):
     workflow.add_conditional_edges("agent", should_continue)
     workflow.add_edge("tools", "agent")
 
-    return workflow.compile()
+    return workflow.compile(checkpointer=checkpointer)
